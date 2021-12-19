@@ -57,3 +57,6 @@ pbmc <- RenameIdents(pbmc,
                      `12` = "CD4+ T", `13` = "Unknown")
 
 DimPlot(pbmc, reduction = "umap", label=TRUE, repel=TRUE)
+
+saveRDS(pbmc, "./cell_type_anotation.rds")
+
